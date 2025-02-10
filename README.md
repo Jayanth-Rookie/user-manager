@@ -54,14 +54,4 @@ A simple **CRUD (Create, Read, Update, Delete) User Management System** built us
 
 
 💡 **Feel free to contribute!** Fork, star ⭐, and submit a pull request. 😊
-```
 
-### 🔹 **How to Use This?**
-1. **Replace** `YOUR_USERNAME/YOUR_REPO_NAME` with your actual GitHub username and repo name.  
-2. **Add screenshots** inside a `screenshots/` folder (optional).  
-3. **Push it to GitHub** by running:
-   ```sh
-   git add README.md
-   git commit -m "Added README"
-   git push origin main
-   ```
