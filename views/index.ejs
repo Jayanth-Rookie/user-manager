@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Better Form</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body class="bg-zinc-900 flex items-center justify-center min-h-screen">
+
+    <div class="bg-zinc-800 p-8 rounded-xl shadow-lg w-96">
+        <div class="nav text-blue-400">
+            <a href="/read">Read Users</a>
+        </div>
+        <h2 class="text-white text-center text-2xl font-semibold mb-6">Create User</h2>
+        <form action="/create" method="post" class="space-y-4">
+            <input class="w-full px-4 py-3 rounded border-2 border-blue-500 bg-transparent text-white placeholder-gray-400 outline-none focus:border-blue-300" type="text" name="name"  placeholder="Enter your name">
+
+            <input class="w-full px-4 py-3 rounded border-2 border-blue-500 bg-transparent text-white placeholder-gray-400 outline-none focus:border-blue-300" type="email" name="email" placeholder="Enter your email">
+
+            <input class="w-full px-4 py-3 rounded border-2 border-blue-500 bg-transparent text-white placeholder-gray-400 outline-none focus:border-blue-300" type="text" name="img" placeholder="Enter image URL">
+
+            <button class="w-full px-4 py-3 bg-blue-600 hover:bg-blue-500 transition-all text-white font-semibold rounded-md">Create User</button>
+        </form>
+    </div>
+
+</body>
+</html>

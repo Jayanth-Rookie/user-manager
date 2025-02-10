@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Better Form</title>
+    <link rel="stylesheet" href="/stylesheets/style.css">
+</head>
+<body class="bg-zinc-900 flex items-center justify-center min-h-screen">
+    <div class="bg-zinc-800 p-8 rounded-xl shadow-lg w-full max-w-4xl">
+        <a class="nav text-blue-400" href="/">Back to home</a>
+        <h2 class="text-white text-center text-2xl font-semibold mb-6">All Users</h2>
+        <div class="flex flex-wrap gap-3 justify-center">
+            
+            <% users.forEach(function(allusers) { %>
+                <div class="w-72 p-6 bg-zinc-700 rounded-lg text-white">
+                    <div class="w-full h-40 rounded-lg bg-red-500">
+                        <img class="w-full h-full" src="<%= allusers.img %>">
+                    </div>
+                    <h3 class="text-xl mt-3 tracking-tighter"><%= allusers.name %></h3>
+                    <h5 class="text-zinc-400"><%= allusers.email %></h5>
+                    <div class="flex gap-3 mt-6">
+                        <a class="text-blue-400 hover:underline" href="#">Edit user</a>
+                        <a class="text-red-400 hover:underline" href="/delete/<%= allusers._id %>">Delete user</a>
+                    </div>
+                </div>
+            <% }); %>
+        </div>
+    </div>
+</body>
+</html>
